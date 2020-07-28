@@ -30,9 +30,10 @@ public class Executor {
 
         System.out.println(parentsCar.toString());
 
-        Mountain.getInstance("Altai");
-        System.out.println(Mountain.name);
-        Mountain.getInstance("Carpathians");
-        System.out.println(Mountain.name);
+        Mountain singleton1 = Mountain.getInstance("Altai");
+        Mountain singleton2 = Mountain.getInstance("Carpathians");
+
+        System.out.println("Result of singleton instances comparing: " +
+                (singleton1 == singleton2));
     }
 }

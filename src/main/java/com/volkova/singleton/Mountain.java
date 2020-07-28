@@ -1,16 +1,13 @@
 package main.java.com.volkova.singleton;
 
 public class Mountain {
+    private String name;
     private static Mountain instance;
-    public static String name;
 
-    private Mountain (String name){
-        this.name = name;
-    }
-
-    public static void getInstance(String name){
+    public static Mountain getInstance(String name){
         if (instance == null){
-            instance = new Mountain(name);
+            instance = new Mountain();
         }
+        return null;
     }
 }
