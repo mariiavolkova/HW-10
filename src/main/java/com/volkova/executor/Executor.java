@@ -1,7 +1,7 @@
 package main.java.com.volkova.executor;
 
-import main.java.com.volkova.singleton.Mountain;
 import main.java.com.volkova.builder.Car;
+import main.java.com.volkova.singleton.Singleton;
 
 public class Executor {
 
@@ -30,8 +30,8 @@ public class Executor {
 
         System.out.println(parentsCar.toString());
 
-        Mountain singleton1 = Mountain.getInstance("Altai");
-        Mountain singleton2 = Mountain.getInstance("Carpathians");
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
 
         System.out.println("Result of singleton instances comparing: " +
                 (singleton1 == singleton2));
